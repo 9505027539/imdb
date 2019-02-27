@@ -1,13 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
-</head>
 <style>
 div.stars {
   width: 300px;
@@ -44,13 +42,12 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 } 
-</style>
 
 <body>
 <div class="container">    
   <div class="row">
  <div class="col-sm-6"> 
- <iframe width="300" height="300" src="https://www.youtube.com/embed/sOEg_YZQsTI" frameborder="0" 
+ <iframe width="250" height="300" src="https://www.youtube.com/embed/sOEg_YZQsTI" frameborder="0" 
  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </div>
   <div class="col-sm-6"> 
@@ -58,20 +55,13 @@ label.star:before {
       <h3>Bahubali</h3>
       <p>Baahubali: The Beginning is a 2015 Indian epic action film directed by S. S. Rajamouli.
        The film was produced by Shobu Yarlagadda and Prasad Devineni and was shot in both Telugu and Tamil.
-        This film was also dubbed into Malayalam and Hindi.
-         The film stars Prabhas, Rana Daggubati, Anushka Shetty, and Tamannaah in the lead roles, with Ramya Krishnan, Sathyaraj, and Nassar in supporting roles
-         . The first of two cinematic parts, the film follows Sivudu, an adventurous young man who helps his love.
+       This film was also dubbed into Malayalam and Hindi.
+       The film stars Prabhas, Rana Daggubati, Anushka Shetty, and Tamannaah in the lead roles, with Ramya Krishnan, Sathyaraj, and Nassar in supporting roles
+       The first of two cinematic parts, the film follows Sivudu, an adventurous young man who helps his love.
       </p>
     </div>
     </div>
- </div>
- </div>
- 
- <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea class=   rows="6" cols="50"></textarea>
-    </div>
-    
+    <div class="col-sm-6">
   <form action="">
 
     <input class="star star-5" id="star-5" type="radio" name="star"/>
@@ -93,6 +83,34 @@ label.star:before {
     <input class="star star-1" id="star-1" type="radio" name="star"/>
 
     <label class="star star-1" for="star-1"></label>
-  </form>
+    </form>
+    </div>
+ 
+   <h3><label for="submit" class="required">Enter Your Comment Here</label></h3>
+  <input type="text"  data-toggle="modal" data-target="#myModal"></input>
+  
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <div class="form-group">
+         <p>Please Login First</p>
+    <label for="email" class="required">Email address:</label>
+    <input type="email" class="form-control"  placeholder="Enter your mail here" name="email"  class="required">
+    
+   <label for="pwd" class="required">Password:</label>
+    <input type="password" class="form-control"  placeholder="Enter your password here"  name="pwd"  class="required">
+    <input type ="submit" value="submit">            
+           
+           </div>
+</div>
+</div>
+</div>
+</div
+
+
+
 </body>
 </html>
